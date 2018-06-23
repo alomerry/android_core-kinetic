@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RosVoice</string>
+
+
+    <integer name="stand">0x111</integer>
+    <integer name="listen">0x110</integer>
+    <integer name="speark">0x101</integer>
+    <integer name="setTeacher_head">0x1001</integer>
+    <integer name="clearUI">0x6685</integer>
+    <integer name="face_recongnition_speak">0x10654</integer>
+
+
+    <string name="sdLocation">/robotlab/</string>
+    <string name="rostopicXMLNmae">rostopic.xml</string>
+    <string name="DBName">maintemp.db</string>
+</resources>

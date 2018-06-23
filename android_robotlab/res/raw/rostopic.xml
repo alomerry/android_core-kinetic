@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rostopic>
+    <!-- 安卓和ROS底座交互的节点名称和消息映射表-->
+    <topic_name>leach_chatter</topic_name>
+    <message_type>std_msgs.String</message_type>
+    <messages>
+        <msg key="回家">go home</msg>
+        <msg key="程宇健">chen</msg>
+        <msg key="后门">back door</msg>
+    </messages>
+</rostopic>
