@@ -546,6 +546,10 @@ public class MainActivity extends RosActivity {
                     //speak("好的");
                 } else {
                     input_content = "" + WhatCommand(tempstring);
+
+                    if(input_content.equals("")){
+                        input_content = WhatCommand(result);
+                    }
                     System.out.println("发送给ROS:" + input_content);
                     sendstringIndex = true;
                     speak("好的");
@@ -604,7 +608,7 @@ public class MainActivity extends RosActivity {
         while (iterator.hasNext()) {
             entry = iterator.next();
             System.out.println("{entry:" + entry.getKey() + "-" + entry.getValue() + "},result:" + result);
-            if (tempstring.equals(entry.getKey())) {
+            if (tempstring.contains(entry.getKey())) {
                 MainActivity.headIntIndex = true;
                 MainActivity.headData = 3;
                 return entry.getValue();
